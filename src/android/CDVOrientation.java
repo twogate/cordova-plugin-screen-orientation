@@ -75,7 +75,7 @@ public class CDVOrientation extends CordovaPlugin {
         Activity activity = cordova.getActivity();
         
         if (orientation.equals(ANY)) {
-            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
         } else if (orientation.equals(LANDSCAPE_PRIMARY)) {
             activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
         } else if (orientation.equals(PORTRAIT_PRIMARY)) {
